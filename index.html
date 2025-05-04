@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>MoneyTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 MoneyTrack</h1>
+    
+    <div class="balance">
+      <h2>Баланс: <span id="total">0 ₽</span></h2>
+    </div>
+
+    <div class="form">
+      <input type="number" id="amount" placeholder="Сумма">
+      <select id="category">
+        <option value="food">Еда</option>
+        <option value="transport">Транспорт</option>
+        <option value="entertainment">Развлечения</option>
+      </select>
+      <button onclick="addTransaction()">Добавить</button>
+    </div>
+
+    <div class="transactions">
+      <h2>История операций</h2>
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+git add .
+  git commit -m "First version of MoneyTrack"
+  git push
